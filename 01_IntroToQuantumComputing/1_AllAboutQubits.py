@@ -153,54 +153,7 @@ state = np.array([0.8, 0.6])
 
 print(apply_u(state))
 
-#region Codercise I.1.5
-##################
-# Codercise I.1.5 #
-##################
-# Simulate a Quantum Algorithm
-
-print("======Codercise I.1.5======")
-
-U = np.array([[1, 1], [1, -1]]) / np.sqrt(2)
 
 
-def initialize_state():
-    """Prepare a qubit in state |0>.
-
-    Returns:
-        array[float]: the vector representation of state |0>.
-    """
-
-    ##################
-    # YOUR CODE HERE #
-    ##################
-
-    # PREPARE THE STATE |0>
-    return np.array([1, 0])
-
-
-def quantum_algorithm():
-    """Use the functions above to implement the quantum algorithm described above.
-
-    Try and do so using three lines of code or less!
-
-    Returns:
-        array[int]: the measurement results after running the algorithm 100 times
-    """
-
-    ##################
-    # YOUR CODE HERE #
-    ##################
-
-    # PREPARE THE STATE, APPLY U, THEN TAKE 100 MEASUREMENT SAMPLES
-    init = initialize_state()
-
-    applied = apply_u(init)
-
-    return measure_state(applied, 100)
-
-
-print(quantum_algorithm())
-#endregion
 
 
