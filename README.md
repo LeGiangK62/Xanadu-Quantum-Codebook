@@ -1,2 +1,2 @@
-# Xanadu-Quantum-Codebook
-Solution to the Xanadu Quantum Codercise 
+# Xanadu-Quantum-Codercise Solution
+Solutions to the Xanadu Quantum Codebook codercises.
